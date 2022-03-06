@@ -11,5 +11,16 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  formTitle = "Registro de Servicios"
+  employeeNameInput:string = '';
+  employeeIdInput:number= 0;
+  ownerNameInput:string = '';
+  ownerIdInput:number= 0;
+  ownerEmailInput:string = '';
+  serviceDateInput = new Date();
 
+
+  addRegister(){
+
+  }
 }

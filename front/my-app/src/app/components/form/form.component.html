@@ -1,0 +1,155 @@
+<section class="section-image">
+  <div class="img-overlay"></div>
+  <div class="intro">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>{{ formTitle }}</h2>
+        <hr/>
+      </div>
+    </div>
+    <div class="box">
+    <form>
+        <div class="form-group row ">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Nombre del Trabajador</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre del Trabajador"
+              class="form-control"
+              [(ngModel)]="employeeNameInput"
+            />
+          </div>
+        </div>
+        <div class="form-group row ">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Identifiacion del Trabajador</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="number"
+              name="employee-id"
+              id="employee-id"
+              placeholder="Identifiacion del Trabajador"
+              class="form-control"
+              [(ngModel)]="employeeIdInput"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Nombre del Propietario del Vehiculo</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="text"
+              name="owner"
+              id="owner"
+              placeholder="Nombre del Propietario del Vehiculo"
+              class="form-control"
+              [(ngModel)]="ownerNameInput"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Identifiacion del Propietario</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="number"
+              name="owner-id"
+              id="owner-id"
+              placeholder="Identifiacion del Propietario"
+              class="form-control"
+              [(ngModel)]="ownerIdInput"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Correo del Propietario</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="email"
+              name="owner-email"
+              id="owner-email"
+              placeholder="Correo del Propietario"
+              class="form-control"
+              [(ngModel)]="ownerEmailInput"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Fecha del Servicio</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="date"
+              name="servide-date"
+              id="servide-date"
+              placeholder="Fecha del Servicio"
+              class="form-control"
+              [(ngModel)]="serviceDateInput"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Tipo de vehículo</label
+          >
+          <div class="col-xs-5">
+            <select name="vehicle-type" id="vehicle-type" placeholder="Tipo de vehiculo" class="form-control">
+              <option value="Motocicleta">Motocicleta</option>
+              <option value="Automovil">Automovil</option>
+              <option value="Camion">camion</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Tipo de lavado</label
+          >
+          <div class="col-xs-5">
+            <select name="wash-type" id="wash-type" placeholder="Tipo de lavado" class="form-control">
+              <option value="sencillo">Sencillo</option>
+              <option value="brillado">Brillado</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-6 col-form-label"
+            >Valor del lavado</label
+          >
+          <div class="col-xs-5">
+            <input
+              type="number"
+              name="wash-value"
+              id="wash-value"
+              placeholder="Valor del lavado"
+              class="form-control"
+              readonly
+              [(ngModel)]="ownerIdInput"
+            />
+          </div>
+        </div>
+        <div class="d-flex p-2">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            (click)="(addRegister)"
+          >
+            Registrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</section>
